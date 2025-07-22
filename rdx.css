@@ -11,17 +11,17 @@
   --color-sub-theme: #0074D9;
 }
 
-/* Ryukoku DX スライド用カスタムテーマ 
-  section.lead {
-    background: linear-gradient(to right,
-        var(--color-theme) 0%,
-        var(--color-theme) 35%,
-        #ffffff 35%,
-        #ffffff 100%);
-    color: #0d2a46;
-    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
-  }*/
-    /* 左側のロゴ配置 */
+/* Ryukoku DX スライド用カスタムテーマ */
+section.lead {
+  background: linear-gradient(to right,
+      var(--color-theme) 0%,
+      var(--color-theme) 35%,
+      #ffffff 35%,
+      #ffffff 100%);
+  color: #0d2a46;
+  font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+}
+/* 左側のロゴ配置 */
 section.lead::before {
   content: "";
   position: absolute;
