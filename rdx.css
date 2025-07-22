@@ -1,0 +1,122 @@
+/* @theme rdx */
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+  --color-theme: #00203b;
+  --color-sub-theme: #0074D9;
+}
+
+/* Ryukoku DX スライド用カスタムテーマ */
+  section.lead {
+    background: linear-gradient(to right,
+        var(--color-theme) 0%,
+        var(--color-theme) 35%,
+        #ffffff 35%,
+        #ffffff 100%);
+    color: #0d2a46;
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+  }
+  
+  /* 左側のロゴ配置 */
+  section.lead::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 25%;
+    height: 90%;
+    background: url("rdx_circle_white_only.png") no-repeat center;
+    background-size: contain;
+    opacity: 1;
+  }
+
+section::after {
+  font-weight: 700;
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+
+ul ul {
+  font-size: 0.9em;
+}
+
+section.lead h1 {
+  color: var(--color-theme);
+  text-align: left;
+  padding-left: 35%;
+}
+section.lead h1 strong {
+  -webkit-text-stroke: 1px var(--color-title-font);
+  padding-left: 35%;
+}
+section.lead h2 {
+  color: var(--color-title-font);
+  text-align: left;
+  padding-left: 35%;
+}
+section.lead h2 strong {
+  -webkit-text-stroke: 1px var(--color-title-font);
+  padding-left: 35%;
+}
+section.lead h3 {
+  color: var(--color-title-font);
+  text-align: left;
+  padding-left: 35%;
+}
+section.lead h3 strong {
+  -webkit-text-stroke: 1px var(--color-title-font);
+  padding-left: 35%;
+}
+section.lead p {
+  text-align: right;
+}
+
+section{
+    padding-top: 105px;
+}
+
+header,
+div.marp-header,
+[class*="header"],
+[data-marpit-header] {
+  background-color: var(--color-theme) !important;
+  color: #fff !important;
+  font-size: 1.2em !important;
+  font-weight: 700 !important;
+  display: block !important;
+  padding: 0.5em 1em !important;
+  opacity: 1 !important;
+  line-height: 1.6 !important;
+  min-height: 2.2em !important;
+  background-image: url("rdx_circle_white_only.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: contain !important;
+}
+
+blockquote {
+  max-width: 90%;
+  border-top: 0.1em dashed #555;
+  font-size: 60%;
+  position: absolute;
+  bottom: 20px;
+}
+blockquote::before {
+  content: "";
+}
+blockquote::after {
+  content: "";
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
