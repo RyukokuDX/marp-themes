@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: rdx
+theme: rdxa
 paginate: true
 math: katex
 ---
@@ -81,4 +81,3 @@ $$
 2. この Markdown のあるディレクトリの中に `images` という名前のディレクトリを作り、先ほどダウンロードした画像を配置してください。これで準備が整いました。
 
 ![black](https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png)
-![bg](https://lecture.ecc.u-tokyo.ac.jp/JOHZU/joho/imageformat/images/image01.jpg)
