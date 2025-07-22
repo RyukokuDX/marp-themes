@@ -92,7 +92,7 @@ div.marp-header,
   opacity: 1 !important;
   line-height: 1.6 !important;
   min-height: 2.2em !important;
-  background-image: url("rdx_circle_white_only.png") !important;
+  background-image: url(https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png) !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: contain !important;
