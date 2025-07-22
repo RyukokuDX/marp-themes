@@ -22,17 +22,18 @@
     font-family: 'Noto Sans JP', 'Roboto', sans-serif;
   }*/
     /* 左側のロゴ配置 */
-    section.lead::before {
-      content: "";
-      position: absolute;
-      top: 5%;
-      left: 5%;
-      width: 25%;
-      height: 90%;
-      background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") no-repeat center;
-      background-size: contain;
-      opacity: 1;
-    }
+section.lead::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 25%;
+  height: 90%;
+  background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+
 section::after {
   font-weight: 700;
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
