@@ -11,7 +11,7 @@
   --color-sub-theme: #0074D9;
 }
 
-/* Ryukoku DX スライド用カスタムテーマ
+/* Ryukoku DX スライド用カスタムテーマ */
 section.lead {
   background: linear-gradient(to right,
       var(--color-theme) 0%,
@@ -20,17 +20,17 @@ section.lead {
       #ffffff 100%);
   color: #0d2a46;
   font-family: 'Noto Sans JP', 'Roboto', sans-serif;
-}*/
+}
 
 /* 左側のロゴ配置 */
-section.lead::before {
+section.lead:after {
   content: "";
   position: absolute;
   top: 5%;
   left: 5%;
   width: 25%;
   height: 90%;
-  background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") !important;
+  background-image: url("https://ryukokudx.github.io/marp-themes/rdx-logo.png") !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: contain !important;
@@ -94,11 +94,15 @@ div.marp-header,
   opacity: 1 !important;
   line-height: 1.6 !important;
   min-height: 2.2em !important;
-  background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") !important;
+  background-image: url("https://ryukokudx.github.io/marp-themes/rdx-logo.png") !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: contain !important;
 }
+
+/*
+background-image: url("https://ryukokudx.github.io/marp-themes/rdx-logo.png") !important;
+*/
 
 blockquote {
   max-width: 90%;
