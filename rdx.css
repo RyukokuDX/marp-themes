@@ -30,9 +30,11 @@ section.lead::before {
   left: 5%;
   width: 25%;
   height: 90%;
-  background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") no-repeat center;
-  background-size: contain;
-  opacity: 1;
+  background-image: url("https://ryukokudx.github.io/marp-themes/rdx_circle_white_only.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: contain !important;
+  opacity: 1 !important;
 }
 
 section::after {
