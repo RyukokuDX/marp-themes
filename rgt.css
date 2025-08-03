@@ -1,0 +1,102 @@
+/* @theme rgt */
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+  --color-theme: #00203b;
+  --color-sub-theme: #0074D9;
+}
+
+.theorem {
+	display: block;
+	font-style: oblique;
+	background-color:lightpink;
+	border-radius: 10px;
+	padding: 10px;
+}
+.theorem:before {
+	content: "定理 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
+
+.definition {
+	display: block;
+	font-style: oblique;
+	background-color:lightgrey;
+	border-radius: 10px;
+	padding: 10px;
+}
+.definition:before {
+	content: "定義 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
+
+.proposition {
+	display: block;
+	font-style: oblique;
+	background-color:lightblue;
+	border-radius: 10px;
+	padding: 10px;
+}
+.proposition:before {
+	content: "命題 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
+
+.corollary {
+	display: block;
+	font-style: oblique;
+	background-color:antiquewhite;
+	border-radius: 10px;
+	padding: 10px;
+}
+.corollary:before {
+	content: "系 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
+
+.lemma {
+	display: block;
+	font-style: oblique;
+	background-color:lightgreen;
+	border-radius: 10px;
+	padding: 10px;
+}
+.lemma:before {
+	content: "補題 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
+
+.axiom {
+	display: block;
+	font-style: oblique;
+	background-color:plum;
+	border-radius: 10px;
+	padding: 10px;
+}
+.axiom:before {
+	content: "公理 :" attr(title) " " !important;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+	opacity: 0.8;
+}
