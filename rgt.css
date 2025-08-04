@@ -7,8 +7,47 @@
 :root {
   --color-background: #fff;
   --color-foreground: #333;
-  --color-theme: #00203b;
-  --color-sub-theme: #0074D9;
+  --color-theme: maroon;
+  --color-header: lightpink;
+}
+
+section.lead {
+	position: absolute;
+}
+
+section.lead h1 {
+	color: var(--color-theme);
+}
+
+section > *:nth-child(2) {
+	margin-top: .2em !important;
+}
+
+header,
+div.marp-header,
+[class*="header"],
+[data-marpit-header] {
+  background-color: var(--color-header) !important;
+  color: #000 !important;
+  font-size: 1.2em !important;
+  font-weight: 700 !important;
+  display: block !important;
+  padding-right: 1em !important;
+  padding-top: .1em !important;
+  padding-bottom: .2em !important;
+  margin-top: 0 !important;
+  margin-bottom: .2em !important;
+  opacity: .9 !important;
+  line-height: 1.8 !important;
+}
+
+section:not(.lead)::after{
+	content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total) ;
+	font-size: 1em !important;
+	position: absolute;
+	right: .1em;
+	top: .3em;
+	opacity: .5;
 }
 
 .theorem {
@@ -17,9 +56,11 @@
 	background-color:lightpink;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .theorem:before {
-	content: "定理 :" attr(title) " " !important;
+	content: "定理: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
@@ -32,9 +73,11 @@
 	background-color:lightgrey;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .definition:before {
-	content: "定義 :" attr(title) " " !important;
+	content: "定義: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
@@ -47,9 +90,11 @@
 	background-color:lightblue;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .proposition:before {
-	content: "命題 :" attr(title) " " !important;
+	content: "命題: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
@@ -62,9 +107,11 @@
 	background-color:antiquewhite;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .corollary:before {
-	content: "系 :" attr(title) " " !important;
+	content: "系: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
@@ -77,9 +124,11 @@
 	background-color:lightgreen;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .lemma:before {
-	content: "補題 :" attr(title) " " !important;
+	content: "補題: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
@@ -92,11 +141,30 @@
 	background-color:plum;
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
 }
 .axiom:before {
-	content: "公理 :" attr(title) " " !important;
+	content: "公理: " attr(title) " " !important;
 	font-weight: bold;
 	font-style: oblique;
 	color: black;
 	opacity: 0.8;
+}
+
+.proof {
+	display: block;
+	margin-top: .4em !important;
+	margin-bottom: .2em !important;
+}
+.proof:before {
+	content: "証明" !important;
+	font-weight: bold;
+	color: black;
+	opacity: 0.8;
+	border: 2px solid #333;
+	border-radius: 5px;
+	padding: 2px 6px;
+	background-color: #f9f9f9;
+	margin-right: 5px;
 }
